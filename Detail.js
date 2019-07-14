@@ -14,7 +14,7 @@ export default class Detail extends Component{
 				<Text>This is Detail</Text>
 				<Button 
 					title="go to home" 
-					onPress={ () => this.props.navigation.navigate('Home') }
+					onPress={ () => this.props.navigation.goBack() }
 				/>
 			</View>
 		);

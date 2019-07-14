@@ -5,8 +5,18 @@ import Home from './Home';
 import Detail from './Detail';
 
 const AppNavigator = createStackNavigator({
-  Home: Home,
-  Detail: Detail,
+  Home: {
+    screen: Home,
+    navigationOptions: {
+      title: 'Home',
+    }
+  },
+  Detail: {
+    screen: Detail,
+    navigationOptions: {
+      title: 'Detail',
+    }
+  },
 });
 
 export default createAppContainer(AppNavigator);
