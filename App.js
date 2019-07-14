@@ -17,6 +17,12 @@ const AppNavigator = createStackNavigator({
       title: 'Detail',
     }
   },
+},{
+  defaultNavigationOptions: {
+    headerStyle: {
+      backgroundColor: '#f60'
+    }
+  }
 });
 
 export default createAppContainer(AppNavigator);
